@@ -32,6 +32,7 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
+      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0" />
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -52,10 +53,10 @@
     </language>
   </registry>
   <node concept="24kQdi" id="1TvVxssXG72">
-    <ref role="1XX52x" to="l7k0:1TvVxssWUaP" resolve="Sensor" />
+    <ref role="1XX52x" to="l7k0:1TvVxssWUaP" resolve="SensorDigital" />
     <node concept="3EZMnI" id="1TvVxssXG7v" role="2wV5jI">
       <node concept="3F0ifn" id="1TvVxssXG8H" role="3EZMnx">
-        <property role="3F0ifm" value="sensor" />
+        <property role="3F0ifm" value="sensorDigital" />
       </node>
       <node concept="3F0A7n" id="1TvVxssXG8g" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -66,17 +67,14 @@
       <node concept="3F0A7n" id="1TvVxssXG8n" role="3EZMnx">
         <ref role="1NtTu8" to="l7k0:1TvVxssVWVe" resolve="pin" />
       </node>
-      <node concept="3F0A7n" id="3r4skCjT5l3" role="3EZMnx">
-        <ref role="1NtTu8" to="l7k0:3r4skCjSZVL" resolve="typeIO" />
-      </node>
       <node concept="2iRfu4" id="1TvVxssXG7y" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1TvVxssXG9f">
-    <ref role="1XX52x" to="l7k0:1TvVxssVWVj" resolve="Actuator" />
+    <ref role="1XX52x" to="l7k0:1TvVxssVWVj" resolve="ActuatorDigital" />
     <node concept="3EZMnI" id="1TvVxssXG9Y" role="2wV5jI">
       <node concept="3F0ifn" id="1TvVxssXG9Z" role="3EZMnx">
-        <property role="3F0ifm" value="actuator" />
+        <property role="3F0ifm" value="actuatorDigital" />
       </node>
       <node concept="3F0A7n" id="1TvVxssXGa0" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -87,18 +85,15 @@
       <node concept="3F0A7n" id="1TvVxssXGa2" role="3EZMnx">
         <ref role="1NtTu8" to="l7k0:1TvVxssVWVe" resolve="pin" />
       </node>
-      <node concept="3F0A7n" id="3r4skCjT5kQ" role="3EZMnx">
-        <ref role="1NtTu8" to="l7k0:3r4skCjSZVL" resolve="typeIO" />
-      </node>
       <node concept="2iRfu4" id="1TvVxssXGa3" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="1TvVxssYaEy">
-    <ref role="1XX52x" to="l7k0:1TvVxssXXSL" resolve="Action" />
+    <ref role="1XX52x" to="l7k0:7iss6BV2x0U" resolve="ActionDigital" />
     <node concept="3EZMnI" id="1TvVxssYaFN" role="2wV5jI">
       <node concept="l2Vlx" id="1TvVxssYaFO" role="2iSdaV" />
       <node concept="1iCGBv" id="1TvVxssYaFR" role="3EZMnx">
-        <ref role="1NtTu8" to="l7k0:1TvVxssXXWh" />
+        <ref role="1NtTu8" to="l7k0:7iss6BV2x0Y" />
         <node concept="1sVBvm" id="1TvVxssYaFU" role="1sWHZn">
           <node concept="3F0A7n" id="1TvVxssYaFW" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -109,16 +104,16 @@
         <property role="3F0ifm" value="&lt;=" />
       </node>
       <node concept="3F0A7n" id="1TvVxssYaG4" role="3EZMnx">
-        <ref role="1NtTu8" to="l7k0:1TvVxssXXVW" resolve="status" />
+        <ref role="1NtTu8" to="l7k0:7iss6BV2x0W" resolve="status" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="1TvVxssYaKW">
-    <ref role="1XX52x" to="l7k0:1TvVxssXXTy" resolve="Transition" />
+    <ref role="1XX52x" to="l7k0:7iss6BV2x0h" resolve="TransitionDigital" />
     <node concept="3EZMnI" id="1TvVxssYb9m" role="2wV5jI">
       <node concept="l2Vlx" id="1TvVxssYb9n" role="2iSdaV" />
       <node concept="1iCGBv" id="1TvVxssYb9q" role="3EZMnx">
-        <ref role="1NtTu8" to="l7k0:1TvVxssXXV2" />
+        <ref role="1NtTu8" to="l7k0:7iss6BV2x0i" />
         <node concept="1sVBvm" id="1TvVxssYb9t" role="1sWHZn">
           <node concept="3F0A7n" id="1TvVxssYb9v" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -129,7 +124,7 @@
         <property role="3F0ifm" value="is" />
       </node>
       <node concept="3F0A7n" id="1TvVxssYbcd" role="3EZMnx">
-        <ref role="1NtTu8" to="l7k0:1TvVxssXXUw" resolve="status" />
+        <ref role="1NtTu8" to="l7k0:7iss6BV2x10" resolve="status" />
       </node>
       <node concept="3F0ifn" id="1TvVxssYbdj" role="3EZMnx">
         <property role="3F0ifm" value="=&gt;" />
@@ -188,6 +183,22 @@
       </node>
       <node concept="2iRkQZ" id="54mLSIfzuDQ" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="24kQdi" id="7iss6BV2zhb">
+    <ref role="1XX52x" to="l7k0:7iss6BV2x0V" resolve="ActionAnalog" />
+    <node concept="3EYTF0" id="7iss6BV2zhc" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="7iss6BV2zhd">
+    <ref role="1XX52x" to="l7k0:7iss6BV2wQU" resolve="TransitionAnalog" />
+    <node concept="3EYTF0" id="7iss6BV2zhe" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="7iss6BV2zhf">
+    <ref role="1XX52x" to="l7k0:7iss6BV1T4H" resolve="ActuatorAnalog" />
+    <node concept="3EYTF0" id="7iss6BV2zhg" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="7iss6BV2zhh">
+    <ref role="1XX52x" to="l7k0:7iss6BV1NKb" resolve="SensorAnalog" />
+    <node concept="3EYTF0" id="7iss6BV2zhi" role="2wV5jI" />
   </node>
 </model>
 

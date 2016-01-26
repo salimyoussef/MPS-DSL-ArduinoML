@@ -62,14 +62,10 @@
       <property role="TrG5h" value="pin" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="3r4skCjSZVL" role="1TKVEl">
-      <property role="TrG5h" value="typeIO" />
-      <ref role="AX2Wp" node="3r4skCjRNXn" resolve="IO_TYPE" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1TvVxssVWVj">
-    <property role="TrG5h" value="Actuator" />
-    <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
+    <property role="TrG5h" value="ActuatorDigital" />
+    <ref role="1TJDcQ" node="7iss6BV2tjz" resolve="Actuator" />
   </node>
   <node concept="1TIwiD" id="1TvVxssVWVs">
     <property role="TrG5h" value="App" />
@@ -101,8 +97,8 @@
     </node>
   </node>
   <node concept="1TIwiD" id="1TvVxssWUaP">
-    <property role="TrG5h" value="Sensor" />
-    <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
+    <property role="TrG5h" value="SensorDigital" />
+    <ref role="1TJDcQ" node="7iss6BV2tz8" resolve="Sensor" />
   </node>
   <node concept="1TIwiD" id="1TvVxssXXQr">
     <property role="TrG5h" value="State" />
@@ -137,35 +133,13 @@
   </node>
   <node concept="1TIwiD" id="1TvVxssXXSL">
     <property role="TrG5h" value="Action" />
+    <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1TvVxssXXVW" role="1TKVEl">
-      <property role="TrG5h" value="status" />
-      <ref role="AX2Wp" node="1TvVxssXXRg" resolve="STATUS" />
-    </node>
-    <node concept="1TJgyj" id="1TvVxssXXWh" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="actuator" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1TvVxssVWVj" resolve="Actuator" />
-    </node>
   </node>
   <node concept="1TIwiD" id="1TvVxssXXTy">
     <property role="TrG5h" value="Transition" />
+    <property role="R5$K7" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="1TvVxssXXUw" role="1TKVEl">
-      <property role="TrG5h" value="status" />
-      <ref role="AX2Wp" node="1TvVxssXXRg" resolve="STATUS" />
-    </node>
-    <node concept="1TJgyi" id="3r4skCjSzRK" role="1TKVEl">
-      <property role="TrG5h" value="typeIO" />
-      <ref role="AX2Wp" node="3r4skCjRNXn" resolve="IO_TYPE" />
-    </node>
-    <node concept="1TJgyj" id="1TvVxssXXV2" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="sensor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1TvVxssWUaP" resolve="Sensor" />
-    </node>
     <node concept="1TJgyj" id="1TvVxssXXVl" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
@@ -184,6 +158,80 @@
     <node concept="M4N5e" id="3r4skCjRPpC" role="M5hS2">
       <property role="1uS6qv" value="false" />
       <property role="1uS6qo" value="digital" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7iss6BV1NKb">
+    <property role="TrG5h" value="SensorAnalog" />
+    <ref role="1TJDcQ" node="7iss6BV2tz8" resolve="Sensor" />
+  </node>
+  <node concept="1TIwiD" id="7iss6BV1T4H">
+    <property role="TrG5h" value="ActuatorAnalog" />
+    <ref role="1TJDcQ" node="7iss6BV2tjz" resolve="Actuator" />
+  </node>
+  <node concept="1TIwiD" id="7iss6BV2tjz">
+    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="Actuator" />
+    <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
+  </node>
+  <node concept="1TIwiD" id="7iss6BV2tz8">
+    <property role="R5$K7" value="true" />
+    <property role="TrG5h" value="Sensor" />
+    <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
+  </node>
+  <node concept="1TIwiD" id="7iss6BV2wQU">
+    <property role="TrG5h" value="TransitionAnalog" />
+    <ref role="1TJDcQ" node="1TvVxssXXTy" resolve="Transition" />
+    <node concept="1TJgyi" id="7iss6BV2wQV" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="7iss6BV2x0f" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sensor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7iss6BV1NKb" resolve="SensorAnalog" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7iss6BV2x0h">
+    <property role="TrG5h" value="TransitionDigital" />
+    <ref role="1TJDcQ" node="1TvVxssXXTy" resolve="Transition" />
+    <node concept="1TJgyj" id="7iss6BV2x0i" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sensor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1TvVxssWUaP" resolve="SensorDigital" />
+    </node>
+    <node concept="1TJgyi" id="7iss6BV2x10" role="1TKVEl">
+      <property role="TrG5h" value="status" />
+      <ref role="AX2Wp" node="1TvVxssXXRg" resolve="STATUS" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7iss6BV2x0U">
+    <property role="TrG5h" value="ActionDigital" />
+    <ref role="1TJDcQ" node="1TvVxssXXSL" resolve="Action" />
+    <node concept="1TJgyi" id="7iss6BV2x0W" role="1TKVEl">
+      <property role="TrG5h" value="status" />
+      <ref role="AX2Wp" node="1TvVxssXXRg" resolve="STATUS" />
+    </node>
+    <node concept="1TJgyj" id="7iss6BV2x0Y" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actuator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1TvVxssVWVj" resolve="ActuatorDigital" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7iss6BV2x0V">
+    <property role="TrG5h" value="ActionAnalog" />
+    <ref role="1TJDcQ" node="1TvVxssXXSL" resolve="Action" />
+    <node concept="1TJgyi" id="7iss6BV2x12" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="7iss6BV2x14" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="actuator" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7iss6BV1T4H" resolve="ActuatorAnalog" />
     </node>
   </node>
 </model>
