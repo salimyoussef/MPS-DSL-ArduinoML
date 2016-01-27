@@ -103,7 +103,7 @@
       <property role="2G23p" value="12" />
     </node>
     <node concept="2G234" id="1MO7vQEL_kb" role="2G23K">
-      <property role="TrG5h" value="led" />
+      <property role="TrG5h" value="b" />
       <property role="2G23p" value="11" />
     </node>
     <node concept="2G234" id="1MO7vQEL_k0" role="2G23K">
@@ -118,7 +118,7 @@
       </node>
       <node concept="2f_A1j" id="1MO7vQEL_kk" role="2E0$x">
         <property role="2f_A1l" value="false" />
-        <ref role="2f_A1n" node="1MO7vQEL_kb" resolve="led" />
+        <ref role="2f_A1n" node="1MO7vQEL_kb" resolve="b" />
       </node>
       <node concept="2f_A1S" id="1MO7vQEL_jA" role="2E0$H">
         <property role="2f_A0D" value="true" />
@@ -134,7 +134,7 @@
       </node>
       <node concept="2f_A1j" id="1MO7vQEL_ku" role="2E0$x">
         <property role="2f_A1l" value="true" />
-        <ref role="2f_A1n" node="1MO7vQEL_kb" resolve="led" />
+        <ref role="2f_A1n" node="1MO7vQEL_kb" resolve="b" />
       </node>
       <node concept="2f_A1S" id="1MO7vQEL_ky" role="2E0$H">
         <property role="2f_A0D" value="true" />
@@ -163,7 +163,7 @@
       </node>
       <node concept="2f_A1j" id="9a4_$D$6S9" role="2E0$x">
         <property role="2f_A1l" value="false" />
-        <ref role="2f_A1n" node="1MO7vQEL_kb" resolve="led" />
+        <ref role="2f_A1n" node="1MO7vQEL_kb" resolve="b" />
       </node>
     </node>
     <node concept="2E3ec" id="9a4_$D$6Se" role="2E0U6">
@@ -173,9 +173,69 @@
         <ref role="2f_A1n" node="9a4_$D$4Ca" resolve="led" />
       </node>
       <node concept="2f_A1S" id="9a4_$D$6Sq" role="2E0$H">
-        <property role="2f_A0D" value="false" />
+        <property role="2f_A0D" value="true" />
         <ref role="2f_A1V" node="9a4_$D$4Cg" resolve="button" />
         <ref role="1ASAHw" node="4bWIWG$7V1d" resolve="off" />
+      </node>
+    </node>
+  </node>
+  <node concept="2G23b" id="9a4_$D$6St">
+    <property role="TrG5h" value="multiStateAlarm" />
+    <ref role="2E0Vk" node="9a4_$D$6Sv" resolve="state1" />
+    <node concept="2F4My" id="9a4_$D$6Sy" role="2G23K">
+      <property role="TrG5h" value="button" />
+      <property role="2G23p" value="12" />
+    </node>
+    <node concept="2G234" id="9a4_$D$6SC" role="2G23K">
+      <property role="TrG5h" value="led" />
+      <property role="2G23p" value="11" />
+    </node>
+    <node concept="2G234" id="9a4_$D$6SK" role="2G23K">
+      <property role="TrG5h" value="buzzer" />
+      <property role="2G23p" value="10" />
+    </node>
+    <node concept="2E3ec" id="9a4_$D$6Sv" role="2E0U6">
+      <property role="TrG5h" value="state1" />
+      <node concept="2f_A1j" id="9a4_$D$6SP" role="2E0$x">
+        <property role="2f_A1l" value="false" />
+        <ref role="2f_A1n" node="9a4_$D$6SC" resolve="led" />
+      </node>
+      <node concept="2f_A1j" id="9a4_$D$6SV" role="2E0$x">
+        <property role="2f_A1l" value="false" />
+        <ref role="2f_A1n" node="9a4_$D$6SK" resolve="buzzer" />
+      </node>
+      <node concept="2f_A1S" id="9a4_$D$6SZ" role="2E0$H">
+        <property role="2f_A0D" value="true" />
+        <ref role="2f_A1V" node="9a4_$D$6Sy" resolve="button" />
+        <ref role="1ASAHw" node="9a4_$D$6T2" resolve="state2" />
+      </node>
+    </node>
+    <node concept="2E3ec" id="9a4_$D$6T2" role="2E0U6">
+      <property role="TrG5h" value="state2" />
+      <node concept="2f_A1j" id="9a4_$D$6Tf" role="2E0$x">
+        <property role="2f_A1l" value="true" />
+        <ref role="2f_A1n" node="9a4_$D$6SK" resolve="buzzer" />
+      </node>
+      <node concept="2f_A1S" id="9a4_$D$6Ti" role="2E0$H">
+        <property role="2f_A0D" value="true" />
+        <ref role="2f_A1V" node="9a4_$D$6Sy" resolve="button" />
+        <ref role="1ASAHw" node="9a4_$D$6Tl" resolve="state3" />
+      </node>
+    </node>
+    <node concept="2E3ec" id="9a4_$D$6Tl" role="2E0U6">
+      <property role="TrG5h" value="state3" />
+      <node concept="2f_A1j" id="9a4_$D$6Ty" role="2E0$x">
+        <property role="2f_A1l" value="false" />
+        <ref role="2f_A1n" node="9a4_$D$6SK" resolve="buzzer" />
+      </node>
+      <node concept="2f_A1j" id="9a4_$D$6TC" role="2E0$x">
+        <property role="2f_A1l" value="true" />
+        <ref role="2f_A1n" node="9a4_$D$6SC" resolve="led" />
+      </node>
+      <node concept="2f_A1S" id="9a4_$D$6TG" role="2E0$H">
+        <property role="2f_A0D" value="true" />
+        <ref role="2f_A1V" node="9a4_$D$6Sy" resolve="button" />
+        <ref role="1ASAHw" node="9a4_$D$6Sv" resolve="state1" />
       </node>
     </node>
   </node>
