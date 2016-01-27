@@ -143,5 +143,41 @@
       </node>
     </node>
   </node>
+  <node concept="2G23b" id="9a4_$D$4C5">
+    <property role="TrG5h" value="stateBasedAlarm" />
+    <ref role="2E0Vk" node="9a4_$D$4C7" resolve="off" />
+    <node concept="2G234" id="9a4_$D$4Ca" role="2G23K">
+      <property role="TrG5h" value="led" />
+      <property role="2G23p" value="12" />
+    </node>
+    <node concept="2F4My" id="9a4_$D$4Cg" role="2G23K">
+      <property role="TrG5h" value="button" />
+      <property role="2G23p" value="11" />
+    </node>
+    <node concept="2E3ec" id="9a4_$D$4C7" role="2E0U6">
+      <property role="TrG5h" value="off" />
+      <node concept="2f_A1S" id="9a4_$D$6Sb" role="2E0$H">
+        <property role="2f_A0D" value="true" />
+        <ref role="2f_A1V" node="9a4_$D$4Cg" resolve="button" />
+        <ref role="1ASAHw" node="1MO7vQEL_jC" resolve="on" />
+      </node>
+      <node concept="2f_A1j" id="9a4_$D$6S9" role="2E0$x">
+        <property role="2f_A1l" value="false" />
+        <ref role="2f_A1n" node="1MO7vQEL_kb" resolve="led" />
+      </node>
+    </node>
+    <node concept="2E3ec" id="9a4_$D$6Se" role="2E0U6">
+      <property role="TrG5h" value="on" />
+      <node concept="2f_A1j" id="9a4_$D$6Sn" role="2E0$x">
+        <property role="2f_A1l" value="true" />
+        <ref role="2f_A1n" node="9a4_$D$4Ca" resolve="led" />
+      </node>
+      <node concept="2f_A1S" id="9a4_$D$6Sq" role="2E0$H">
+        <property role="2f_A0D" value="false" />
+        <ref role="2f_A1V" node="9a4_$D$4Cg" resolve="button" />
+        <ref role="1ASAHw" node="4bWIWG$7V1d" resolve="off" />
+      </node>
+    </node>
+  </node>
 </model>
 
