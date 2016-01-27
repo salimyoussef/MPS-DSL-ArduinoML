@@ -11,7 +11,7 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.WhileStatement" />
   <root>
     <file name="StructureAspectDescriptor.java">
-      <unit at="13,0,52,0" name="NewLanguage.structure.StructureAspectDescriptor" />
+      <unit at="13,0,70,0" name="NewLanguage.structure.StructureAspectDescriptor" />
     </file>
   </root>
   <root nodeRef="r:1c9b0b97-b84a-45b2-a546-732d60c95888(NewLanguage.structure)/2188729726963015120">

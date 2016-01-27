@@ -32,7 +32,6 @@
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
-      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0" />
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -130,7 +129,7 @@
         <property role="3F0ifm" value="=&gt;" />
       </node>
       <node concept="1iCGBv" id="1TvVxssYb9x" role="3EZMnx">
-        <ref role="1NtTu8" to="l7k0:1TvVxssXXVl" />
+        <ref role="1NtTu8" to="l7k0:4bWIWG$7H2F" />
         <node concept="1sVBvm" id="1TvVxssYb9$" role="1sWHZn">
           <node concept="3F0A7n" id="1TvVxssYb9A" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -186,19 +185,90 @@
   </node>
   <node concept="24kQdi" id="7iss6BV2zhb">
     <ref role="1XX52x" to="l7k0:7iss6BV2x0V" resolve="ActionAnalog" />
-    <node concept="3EYTF0" id="7iss6BV2zhc" role="2wV5jI" />
+    <node concept="3EZMnI" id="7iss6BV51L9" role="2wV5jI">
+      <node concept="l2Vlx" id="7iss6BV51La" role="2iSdaV" />
+      <node concept="1iCGBv" id="7iss6BV51Lb" role="3EZMnx">
+        <ref role="1NtTu8" to="l7k0:7iss6BV2x14" />
+        <node concept="1sVBvm" id="7iss6BV51Lc" role="1sWHZn">
+          <node concept="3F0A7n" id="7iss6BV51Ld" role="2wV5jI">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7iss6BV51Le" role="3EZMnx">
+        <property role="3F0ifm" value="&lt;=" />
+      </node>
+      <node concept="3F0A7n" id="7iss6BV51Lf" role="3EZMnx">
+        <ref role="1NtTu8" to="l7k0:7iss6BV2x12" resolve="value" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="7iss6BV2zhd">
     <ref role="1XX52x" to="l7k0:7iss6BV2wQU" resolve="TransitionAnalog" />
-    <node concept="3EYTF0" id="7iss6BV2zhe" role="2wV5jI" />
+    <node concept="3EZMnI" id="7iss6BV50RT" role="2wV5jI">
+      <node concept="l2Vlx" id="7iss6BV50RU" role="2iSdaV" />
+      <node concept="1iCGBv" id="7iss6BV50RV" role="3EZMnx">
+        <ref role="1NtTu8" to="l7k0:7iss6BV2x0f" />
+        <node concept="1sVBvm" id="7iss6BV50RW" role="1sWHZn">
+          <node concept="3F0A7n" id="7iss6BV50RX" role="2wV5jI">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7iss6BV50RY" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+      </node>
+      <node concept="3F0A7n" id="7iss6BV50RZ" role="3EZMnx">
+        <ref role="1NtTu8" to="l7k0:7iss6BV2wQV" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="7iss6BV50S0" role="3EZMnx">
+        <property role="3F0ifm" value="=&gt;" />
+      </node>
+      <node concept="1iCGBv" id="7iss6BV50S1" role="3EZMnx">
+        <ref role="1NtTu8" to="l7k0:4bWIWG$7H2F" />
+        <node concept="1sVBvm" id="7iss6BV50S2" role="1sWHZn">
+          <node concept="3F0A7n" id="7iss6BV50S3" role="2wV5jI">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="7iss6BV2zhf">
     <ref role="1XX52x" to="l7k0:7iss6BV1T4H" resolve="ActuatorAnalog" />
-    <node concept="3EYTF0" id="7iss6BV2zhg" role="2wV5jI" />
+    <node concept="3EZMnI" id="7iss6BV51uD" role="2wV5jI">
+      <node concept="3F0ifn" id="7iss6BV51uE" role="3EZMnx">
+        <property role="3F0ifm" value="actuatorAnalog" />
+      </node>
+      <node concept="3F0A7n" id="7iss6BV51uF" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="7iss6BV51uG" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="7iss6BV51uH" role="3EZMnx">
+        <ref role="1NtTu8" to="l7k0:1TvVxssVWVe" resolve="pin" />
+      </node>
+      <node concept="2iRfu4" id="7iss6BV51uI" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="7iss6BV2zhh">
     <ref role="1XX52x" to="l7k0:7iss6BV1NKb" resolve="SensorAnalog" />
-    <node concept="3EYTF0" id="7iss6BV2zhi" role="2wV5jI" />
+    <node concept="3EZMnI" id="7iss6BV51kY" role="2wV5jI">
+      <node concept="3F0ifn" id="7iss6BV51kZ" role="3EZMnx">
+        <property role="3F0ifm" value="sensorAnalog" />
+      </node>
+      <node concept="3F0A7n" id="7iss6BV51l0" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="7iss6BV51l1" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="7iss6BV51l2" role="3EZMnx">
+        <ref role="1NtTu8" to="l7k0:1TvVxssVWVe" resolve="pin" />
+      </node>
+      <node concept="2iRfu4" id="7iss6BV51l3" role="2iSdaV" />
+    </node>
   </node>
 </model>
 

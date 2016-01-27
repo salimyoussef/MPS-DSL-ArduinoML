@@ -4,17 +4,17 @@
   <concept fqn="jetbrains.mps.baseLanguage.structure.ReturnStatement" />
   <root>
     <file name="QueriesGenerated.java">
-      <unit at="14,0,67,0" name="NewLanguage.generator.template.main.QueriesGenerated" />
+      <unit at="14,0,85,0" name="NewLanguage.generator.template.main.QueriesGenerated" />
     </file>
   </root>
   <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/2188729726962805385">
     <file name="QueriesGenerated.java">
       <node id="5843076968783013366" at="17,112,18,337" concept="1" />
-      <node id="2188729726963002156" at="57,120,58,192" concept="1" />
-      <node id="3946403736458055270" at="60,120,61,192" concept="1" />
+      <node id="2188729726963002156" at="75,120,76,192" concept="1" />
+      <node id="3946403736458055270" at="78,120,79,192" concept="1" />
       <scope id="5843076968783011664" at="17,112,18,337" />
-      <scope id="2188729726963002150" at="57,120,58,192" />
-      <scope id="3946403736458055264" at="60,120,61,192" />
+      <scope id="2188729726963002150" at="75,120,76,192" />
+      <scope id="3946403736458055264" at="78,120,79,192" />
     </file>
   </root>
   <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/2188729726962929984">
@@ -31,37 +31,65 @@
   </root>
   <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/5843076968783066526">
     <file name="QueriesGenerated.java">
-      <node id="3946403736458628399" at="26,112,27,383" concept="1" />
-      <node id="7990802021749926668" at="29,112,30,345" concept="1" />
-      <node id="7990802021749977816" at="32,112,33,217" concept="1" />
-      <scope id="3946403736458397965" at="26,112,27,383" />
-      <scope id="7990802021749924840" at="29,112,30,345" />
-      <scope id="7990802021749975173" at="32,112,33,217" />
+      <node id="7990802021749926668" at="26,112,27,345" concept="1" />
+      <node id="7990802021749977816" at="29,112,30,217" concept="1" />
+      <scope id="7990802021749924840" at="26,112,27,345" />
+      <scope id="7990802021749975173" at="29,112,30,217" />
     </file>
   </root>
   <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/7990802021749986357">
     <file name="QueriesGenerated.java">
-      <node id="3946403736458792386" at="35,112,36,381" concept="1" />
-      <node id="3946403736458805142" at="38,112,39,343" concept="1" />
-      <node id="7990802021750047827" at="41,112,42,217" concept="1" />
-      <node id="7990802021750188358" at="44,112,45,333" concept="1" />
-      <node id="7990802021750233293" at="47,112,48,64" concept="1" />
-      <scope id="3946403736458790847" at="35,112,36,381" />
-      <scope id="3946403736458802143" at="38,112,39,343" />
-      <scope id="7990802021750045263" at="41,112,42,217" />
-      <scope id="7990802021750186857" at="44,112,45,333" />
-      <scope id="7990802021750230845" at="47,112,48,64" />
+      <node id="3946403736458805142" at="32,112,33,343" concept="1" />
+      <node id="7990802021750047827" at="35,112,36,217" concept="1" />
+      <node id="7990802021750188358" at="38,112,39,333" concept="1" />
+      <node id="7990802021750233293" at="41,112,42,64" concept="1" />
+      <scope id="3946403736458802143" at="32,112,33,343" />
+      <scope id="7990802021750045263" at="35,112,36,217" />
+      <scope id="7990802021750186857" at="38,112,39,333" />
+      <scope id="7990802021750230845" at="41,112,42,64" />
     </file>
   </root>
   <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/7990802021750211160">
     <file name="QueriesGenerated.java">
-      <node id="7990802021750242772" at="50,112,51,175" concept="1" />
-      <node id="3946403736458148279" at="53,108,54,217" concept="0" />
-      <node id="3946403736458081803" at="54,217,55,194" concept="1" />
-      <node id="3946403736458082572" at="63,120,64,193" concept="1" />
-      <scope id="7990802021750242766" at="50,112,51,175" />
-      <scope id="3946403736458082566" at="63,120,64,193" />
-      <scope id="3946403736458081797" at="53,108,55,194" />
+      <node id="7990802021750242772" at="44,112,45,175" concept="1" />
+      <node id="3946403736458148279" at="71,108,72,217" concept="0" />
+      <node id="3946403736458081803" at="72,217,73,194" concept="1" />
+      <node id="3946403736458082572" at="81,120,82,193" concept="1" />
+      <scope id="7990802021750242766" at="44,112,45,175" />
+      <scope id="3946403736458082566" at="81,120,82,193" />
+      <scope id="3946403736458081797" at="71,108,73,194" />
+    </file>
+  </root>
+  <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/8402714605252288100">
+    <file name="QueriesGenerated.java">
+      <node id="8402714605252615632" at="47,112,48,345" concept="1" />
+      <node id="8402714605252622668" at="50,112,51,192" concept="1" />
+      <scope id="8402714605252613907" at="47,112,48,345" />
+      <scope id="8402714605252620158" at="50,112,51,192" />
+    </file>
+  </root>
+  <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/8402714605252288265">
+    <file name="QueriesGenerated.java">
+      <node id="8402714605252584175" at="53,112,54,343" concept="1" />
+      <node id="8402714605252575481" at="56,112,57,192" concept="1" />
+      <node id="8402714605252545601" at="59,112,60,333" concept="1" />
+      <node id="8402714605252550484" at="62,112,63,64" concept="1" />
+      <scope id="8402714605252579156" at="53,112,54,343" />
+      <scope id="8402714605252574024" at="56,112,57,192" />
+      <scope id="8402714605252544485" at="59,112,60,333" />
+      <scope id="8402714605252549028" at="62,112,63,64" />
+    </file>
+  </root>
+  <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/8402714605252288270">
+    <file name="QueriesGenerated.java">
+      <node id="8402714605252657392" at="65,112,66,185" concept="1" />
+      <scope id="8402714605252657386" at="65,112,66,185" />
+    </file>
+  </root>
+  <root nodeRef="r:2821539f-a9ba-48b2-ba08-d6fb24f5d028(NewLanguage.generator.template.main@generator)/8402714605252288275">
+    <file name="QueriesGenerated.java">
+      <node id="8402714605252666734" at="68,112,69,185" concept="1" />
+      <scope id="8402714605252666728" at="68,112,69,185" />
     </file>
   </root>
 </debug-info>
