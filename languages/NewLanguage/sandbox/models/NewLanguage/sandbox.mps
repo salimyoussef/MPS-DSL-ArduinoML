@@ -5,13 +5,16 @@
     <use id="24f6669a-8ba1-4c5a-bbc4-b68f2c44cf80" name="NewLanguage" version="-1" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="-1" />
   </languages>
-  <imports />
+  <imports>
+    <import index="v0dh" ref="r:7294878c-3a9f-49eb-840a-c75fdce6b29d(NewLanguage.sandbox)" />
+  </imports>
   <registry>
     <language id="24f6669a-8ba1-4c5a-bbc4-b68f2c44cf80" name="NewLanguage">
       <concept id="2188729726963015067" name="NewLanguage.structure.State" flags="ng" index="2E3ec">
         <child id="2188729726963017526" name="actions" index="2E0$x" />
         <child id="2188729726963017530" name="transition" index="2E0$H" />
       </concept>
+      <concept id="2188729726962737845" name="NewLanguage.structure.SensorDigital" flags="ng" index="2F4My" />
       <concept id="2188729726962486995" name="NewLanguage.structure.ActuatorDigital" flags="ng" index="2G234" />
       <concept id="2188729726962487004" name="NewLanguage.structure.App" flags="ng" index="2G23b">
         <reference id="2188729726963015875" name="init_state" index="2E0Vk" />
@@ -24,6 +27,10 @@
       <concept id="8402714605252120634" name="NewLanguage.structure.ActionDigital" flags="ng" index="2f_A1j">
         <property id="8402714605252120636" name="status" index="2f_A1l" />
         <reference id="8402714605252120638" name="actuator" index="2f_A1n" />
+      </concept>
+      <concept id="8402714605252120593" name="NewLanguage.structure.TransitionDigital" flags="ng" index="2f_A1S">
+        <property id="8402714605252120640" name="status" index="2f_A0D" />
+        <reference id="8402714605252120594" name="sensor" index="2f_A1V" />
       </concept>
       <concept id="8402714605252119994" name="NewLanguage.structure.TransitionAnalog" flags="ng" index="2f_BRj">
         <property id="8402714605252119995" name="value" index="2f_BRi" />
@@ -81,7 +88,59 @@
         <property role="2f_A1l" value="true" />
         <ref role="2f_A1n" node="4bWIWG$7V1J" resolve="alarm" />
       </node>
-      <node concept="1ASAIZ" id="711E1YXGUan" role="2E0$H" />
+      <node concept="2f_BRj" id="1MO7vQELwPr" role="2E0$H">
+        <property role="2f_BRi" value="12" />
+        <ref role="2f_A1A" node="4bWIWG$7V1P" resolve="p" />
+        <ref role="1ASAHw" node="711E1YXGIU_" resolve="o" />
+      </node>
+    </node>
+  </node>
+  <node concept="2G23b" id="1MO7vQEL_e8">
+    <property role="TrG5h" value="verySimpleAlarm" />
+    <ref role="2E0Vk" node="1MO7vQEL_fm" resolve="off" />
+    <node concept="2F4My" id="1MO7vQEL_ju" role="2G23K">
+      <property role="TrG5h" value="button" />
+      <property role="2G23p" value="12" />
+    </node>
+    <node concept="2G234" id="1MO7vQEL_kb" role="2G23K">
+      <property role="TrG5h" value="led" />
+      <property role="2G23p" value="11" />
+    </node>
+    <node concept="2G234" id="1MO7vQEL_k0" role="2G23K">
+      <property role="TrG5h" value="buzzer" />
+      <property role="2G23p" value="10" />
+    </node>
+    <node concept="2E3ec" id="1MO7vQEL_fm" role="2E0U6">
+      <property role="TrG5h" value="off" />
+      <node concept="2f_A1j" id="1MO7vQEL_kg" role="2E0$x">
+        <property role="2f_A1l" value="false" />
+        <ref role="2f_A1n" node="1MO7vQEL_k0" resolve="buzzer" />
+      </node>
+      <node concept="2f_A1j" id="1MO7vQEL_kk" role="2E0$x">
+        <property role="2f_A1l" value="false" />
+        <ref role="2f_A1n" node="1MO7vQEL_kb" resolve="led" />
+      </node>
+      <node concept="2f_A1S" id="1MO7vQEL_jA" role="2E0$H">
+        <property role="2f_A0D" value="true" />
+        <ref role="2f_A1V" node="1MO7vQEL_ju" resolve="button" />
+        <ref role="1ASAHw" node="1MO7vQEL_jC" resolve="on" />
+      </node>
+    </node>
+    <node concept="2E3ec" id="1MO7vQEL_jC" role="2E0U6">
+      <property role="TrG5h" value="on" />
+      <node concept="2f_A1j" id="1MO7vQEL_ko" role="2E0$x">
+        <property role="2f_A1l" value="true" />
+        <ref role="2f_A1n" node="1MO7vQEL_k0" resolve="buzzer" />
+      </node>
+      <node concept="2f_A1j" id="1MO7vQEL_ku" role="2E0$x">
+        <property role="2f_A1l" value="true" />
+        <ref role="2f_A1n" node="1MO7vQEL_kb" resolve="led" />
+      </node>
+      <node concept="2f_A1S" id="1MO7vQEL_ky" role="2E0$H">
+        <property role="2f_A0D" value="true" />
+        <ref role="2f_A1V" node="1MO7vQEL_ju" resolve="button" />
+        <ref role="1ASAHw" node="1MO7vQEL_fm" resolve="off" />
+      </node>
     </node>
   </node>
 </model>

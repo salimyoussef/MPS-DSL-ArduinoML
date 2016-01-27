@@ -2,17 +2,18 @@
 <model ref="r:1c9b0b97-b84a-45b2-a546-732d60c95888(NewLanguage.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="-1" />
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1082978164219" name="jetbrains.mps.lang.structure.structure.EnumerationDataTypeDeclaration" flags="ng" index="AxPO7">
         <property id="1212080844762" name="hasNoDefaultMember" index="PDuV0" />
+        <property id="1197591154882" name="memberIdentifierPolicy" index="3lZH7k" />
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
@@ -23,6 +24,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
+        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -55,6 +57,7 @@
     <property role="TrG5h" value="Brick" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="1pbfSe" value="995030957" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1TvVxssVWG6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -66,11 +69,13 @@
   </node>
   <node concept="1TIwiD" id="1TvVxssVWVj">
     <property role="TrG5h" value="ActuatorDigital" />
+    <property role="1pbfSe" value="995081450" />
     <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
   </node>
   <node concept="1TIwiD" id="1TvVxssVWVs">
     <property role="TrG5h" value="App" />
     <property role="19KtqR" value="true" />
+    <property role="1pbfSe" value="995081459" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1TvVxssXY33" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -99,10 +104,12 @@
   </node>
   <node concept="1TIwiD" id="1TvVxssWUaP">
     <property role="TrG5h" value="SensorDigital" />
+    <property role="1pbfSe" value="995332300" />
     <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
   </node>
   <node concept="1TIwiD" id="1TvVxssXXQr">
     <property role="TrG5h" value="State" />
+    <property role="1pbfSe" value="995609522" />
     <node concept="1TJgyj" id="1TvVxssXYsQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actions" />
@@ -122,6 +129,7 @@
   <node concept="AxPO7" id="1TvVxssXXRg">
     <property role="TrG5h" value="STATUS" />
     <property role="PDuV0" value="true" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
     <node concept="M4N5e" id="1TvVxssXXRh" role="M5hS2">
       <property role="1uS6qv" value="true" />
@@ -135,11 +143,13 @@
   <node concept="1TIwiD" id="1TvVxssXXSL">
     <property role="TrG5h" value="Action" />
     <property role="R5$K7" value="true" />
+    <property role="1pbfSe" value="995609672" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="AxPO7" id="3r4skCjRNXn">
     <property role="TrG5h" value="IO_TYPE" />
     <property role="PDuV0" value="true" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAQMTB" resolve="boolean" />
     <node concept="M4N5e" id="3r4skCjRNXo" role="M5hS2">
       <property role="1uS6qv" value="true" />
@@ -152,14 +162,17 @@
   </node>
   <node concept="1TIwiD" id="7iss6BV1NKb">
     <property role="TrG5h" value="SensorAnalog" />
+    <property role="1pbfSe" value="1872997492" />
     <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
   </node>
   <node concept="1TIwiD" id="7iss6BV1T4H">
     <property role="TrG5h" value="ActuatorAnalog" />
+    <property role="1pbfSe" value="1873019286" />
     <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
   </node>
   <node concept="1TIwiD" id="7iss6BV2wQU">
     <property role="TrG5h" value="TransitionAnalog" />
+    <property role="1pbfSe" value="1873182243" />
     <node concept="1TJgyi" id="7iss6BV2wQV" role="1TKVEl">
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
@@ -176,6 +189,7 @@
   </node>
   <node concept="1TIwiD" id="7iss6BV2x0h">
     <property role="TrG5h" value="TransitionDigital" />
+    <property role="1pbfSe" value="1873182842" />
     <node concept="1TJgyj" id="7iss6BV2x0i" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="sensor" />
@@ -192,6 +206,7 @@
   </node>
   <node concept="1TIwiD" id="7iss6BV2x0U">
     <property role="TrG5h" value="ActionDigital" />
+    <property role="1pbfSe" value="1873182883" />
     <ref role="1TJDcQ" node="1TvVxssXXSL" resolve="Action" />
     <node concept="1TJgyi" id="7iss6BV2x0W" role="1TKVEl">
       <property role="TrG5h" value="status" />
@@ -206,6 +221,7 @@
   </node>
   <node concept="1TIwiD" id="7iss6BV2x0V">
     <property role="TrG5h" value="ActionAnalog" />
+    <property role="1pbfSe" value="1873182884" />
     <ref role="1TJDcQ" node="1TvVxssXXSL" resolve="Action" />
     <node concept="1TJgyi" id="7iss6BV2x12" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -220,6 +236,7 @@
   </node>
   <node concept="PlHQZ" id="4bWIWG$7H1O">
     <property role="TrG5h" value="Transition" />
+    <property role="1pbfSe" value="1729858623" />
     <node concept="1TJgyj" id="4bWIWG$7H2F" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />

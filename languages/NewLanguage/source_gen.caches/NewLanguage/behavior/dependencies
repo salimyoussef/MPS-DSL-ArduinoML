@@ -2,17 +2,20 @@
 <dependenciesRoot>
   <dependency className="NewLanguage.behavior.ActionAnalog_BehaviorDescriptor" file="ActionAnalog_BehaviorDescriptor.java">
     <classNode dependClassName="NewLanguage.behavior.Action_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="NewLanguage.behavior.ActionDigital_BehaviorDescriptor" file="ActionDigital_BehaviorDescriptor.java">
     <classNode dependClassName="NewLanguage.behavior.Action_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="NewLanguage.behavior.Action_BehaviorDescriptor" file="Action_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
@@ -20,50 +23,36 @@
   </dependency>
   <dependency className="NewLanguage.behavior.ActuatorAnalog_BehaviorDescriptor" file="ActuatorAnalog_BehaviorDescriptor.java">
     <classNode dependClassName="NewLanguage.behavior.Brick_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="NewLanguage.behavior.ActuatorDigital_BehaviorDescriptor" file="ActuatorDigital_BehaviorDescriptor.java">
     <classNode dependClassName="NewLanguage.behavior.Brick_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="NewLanguage.behavior.App_BehaviorDescriptor" file="App_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Boolean" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="jetbrains.mps.execution.util.behavior.IMainClass_Behavior" />
     <classNode dependClassName="jetbrains.mps.execution.util.behavior.IMainClass_BehaviorDescriptor" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
+    <classNode dependClassName="jetbrains.mps.smodel.behaviour.DefaultValuesHolder" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="NewLanguage.behavior.BehaviorAspectDescriptor" file="BehaviorAspectDescriptor.java">
-    <classNode dependClassName="NewLanguage.behavior.ActionAnalog_BehaviorDescriptor" />
-    <classNode dependClassName="NewLanguage.behavior.ActionDigital_BehaviorDescriptor" />
-    <classNode dependClassName="NewLanguage.behavior.ActuatorAnalog_BehaviorDescriptor" />
-    <classNode dependClassName="NewLanguage.behavior.ActuatorDigital_BehaviorDescriptor" />
-    <classNode dependClassName="NewLanguage.behavior.App_BehaviorDescriptor" />
-    <classNode dependClassName="NewLanguage.behavior.SensorAnalog_BehaviorDescriptor" />
-    <classNode dependClassName="NewLanguage.behavior.SensorDigital_BehaviorDescriptor" />
-    <classNode dependClassName="NewLanguage.behavior.State_BehaviorDescriptor" />
-    <classNode dependClassName="NewLanguage.behavior.TransitionAnalog_BehaviorDescriptor" />
-    <classNode dependClassName="NewLanguage.behavior.TransitionDigital_BehaviorDescriptor" />
-    <classNode dependClassName="java.lang.String" />
-    <classNode dependClassName="java.util.Arrays" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.smodel.runtime.interpreted.BehaviorAspectInterpreted" />
-    <classNode extendsClassName="jetbrains.mps.smodel.runtime.BehaviorAspectDescriptor" />
-  </dependency>
   <dependency className="NewLanguage.behavior.Brick_BehaviorDescriptor" file="Brick_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
@@ -71,21 +60,23 @@
   </dependency>
   <dependency className="NewLanguage.behavior.SensorAnalog_BehaviorDescriptor" file="SensorAnalog_BehaviorDescriptor.java">
     <classNode dependClassName="NewLanguage.behavior.Brick_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="NewLanguage.behavior.SensorDigital_BehaviorDescriptor" file="SensorDigital_BehaviorDescriptor.java">
     <classNode dependClassName="NewLanguage.behavior.Brick_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
   <dependency className="NewLanguage.behavior.State_BehaviorDescriptor" file="State_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
-    <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_Behavior" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.INamedConcept_BehaviorDescriptor" />
     <classNode dependClassName="org.jetbrains.mps.openapi.model.SNode" />
     <classNode extendsClassName="java.lang.Cloneable" />
@@ -93,6 +84,7 @@
   </dependency>
   <dependency className="NewLanguage.behavior.TransitionAnalog_BehaviorDescriptor" file="TransitionAnalog_BehaviorDescriptor.java">
     <classNode dependClassName="NewLanguage.behavior.Transition_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
@@ -101,12 +93,15 @@
   </dependency>
   <dependency className="NewLanguage.behavior.TransitionDigital_BehaviorDescriptor" file="TransitionDigital_BehaviorDescriptor.java">
     <classNode dependClassName="NewLanguage.behavior.Transition_BehaviorDescriptor" />
+    <classNode dependClassName="java.lang.Deprecated" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
     <classNode dependClassName="jetbrains.mps.lang.core.behavior.BaseConcept_BehaviorDescriptor" />
     <classNode extendsClassName="java.lang.Cloneable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.impl.CompiledBehaviorDescriptor" />
   </dependency>
-  <dependency className="NewLanguage.behavior.Transition_BehaviorDescriptor" file="Transition_BehaviorDescriptor.java" />
+  <dependency className="NewLanguage.behavior.Transition_BehaviorDescriptor" file="Transition_BehaviorDescriptor.java">
+    <classNode dependClassName="java.lang.Deprecated" />
+  </dependency>
 </dependenciesRoot>
 
