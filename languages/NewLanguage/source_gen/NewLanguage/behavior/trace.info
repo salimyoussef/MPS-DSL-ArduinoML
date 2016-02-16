@@ -2,43 +2,55 @@
 <debug-info>
   <root>
     <file name="ActionAnalog_BehaviorDescriptor.java">
-      <unit at="11,0,20,0" name="NewLanguage.behavior.ActionAnalog_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="NewLanguage.behavior.ActionAnalog_BehaviorDescriptor" />
     </file>
     <file name="ActionDigital_BehaviorDescriptor.java">
-      <unit at="11,0,20,0" name="NewLanguage.behavior.ActionDigital_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="NewLanguage.behavior.ActionDigital_BehaviorDescriptor" />
     </file>
     <file name="Action_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="NewLanguage.behavior.Action_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="NewLanguage.behavior.Action_BehaviorDescriptor" />
     </file>
     <file name="ActuatorAnalog_BehaviorDescriptor.java">
-      <unit at="11,0,20,0" name="NewLanguage.behavior.ActuatorAnalog_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="NewLanguage.behavior.ActuatorAnalog_BehaviorDescriptor" />
     </file>
     <file name="ActuatorDigital_BehaviorDescriptor.java">
-      <unit at="11,0,20,0" name="NewLanguage.behavior.ActuatorDigital_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="NewLanguage.behavior.ActuatorDigital_BehaviorDescriptor" />
     </file>
     <file name="App_BehaviorDescriptor.java">
-      <unit at="16,0,34,0" name="NewLanguage.behavior.App_BehaviorDescriptor" />
+      <unit at="12,0,29,0" name="NewLanguage.behavior.App_BehaviorDescriptor" />
+    </file>
+    <file name="BehaviorAspectDescriptor.java">
+      <unit at="9,0,46,0" name="NewLanguage.behavior.BehaviorAspectDescriptor" />
     </file>
     <file name="Brick_BehaviorDescriptor.java">
-      <unit at="14,0,26,0" name="NewLanguage.behavior.Brick_BehaviorDescriptor" />
+      <unit at="10,0,21,0" name="NewLanguage.behavior.Brick_BehaviorDescriptor" />
+    </file>
+    <file name="ConditionAnalog_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="NewLanguage.behavior.ConditionAnalog_BehaviorDescriptor" />
+    </file>
+    <file name="ConditionDigital_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="NewLanguage.behavior.ConditionDigital_BehaviorDescriptor" />
+    </file>
+    <file name="Condition_BehaviorDescriptor.java">
+      <unit at="6,0,8,0" name="NewLanguage.behavior.Condition_BehaviorDescriptor" />
+    </file>
+    <file name="MacroUtilisation_BehaviorDescriptor.java">
+      <unit at="7,0,15,0" name="NewLanguage.behavior.MacroUtilisation_BehaviorDescriptor" />
+    </file>
+    <file name="Macro_BehaviorDescriptor.java">
+      <unit at="10,0,21,0" name="NewLanguage.behavior.Macro_BehaviorDescriptor" />
     </file>
     <file name="SensorAnalog_BehaviorDescriptor.java">
-      <unit at="11,0,20,0" name="NewLanguage.behavior.SensorAnalog_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="NewLanguage.behavior.SensorAnalog_BehaviorDescriptor" />
     </file>
     <file name="SensorDigital_BehaviorDescriptor.java">
-      <unit at="11,0,20,0" name="NewLanguage.behavior.SensorDigital_BehaviorDescriptor" />
+      <unit at="6,0,14,0" name="NewLanguage.behavior.SensorDigital_BehaviorDescriptor" />
     </file>
     <file name="State_BehaviorDescriptor.java">
-      <unit at="14,0,26,0" name="NewLanguage.behavior.State_BehaviorDescriptor" />
-    </file>
-    <file name="TransitionAnalog_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="NewLanguage.behavior.TransitionAnalog_BehaviorDescriptor" />
-    </file>
-    <file name="TransitionDigital_BehaviorDescriptor.java">
-      <unit at="12,0,21,0" name="NewLanguage.behavior.TransitionDigital_BehaviorDescriptor" />
+      <unit at="10,0,21,0" name="NewLanguage.behavior.State_BehaviorDescriptor" />
     </file>
     <file name="Transition_BehaviorDescriptor.java">
-      <unit at="11,0,14,0" name="NewLanguage.behavior.Transition_BehaviorDescriptor" />
+      <unit at="7,0,15,0" name="NewLanguage.behavior.Transition_BehaviorDescriptor" />
     </file>
   </root>
 </debug-info>

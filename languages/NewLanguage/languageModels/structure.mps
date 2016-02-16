@@ -6,8 +6,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -17,6 +17,9 @@
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
@@ -24,7 +27,6 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="4628067390765956807" name="final" index="R5$K2" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
-        <property id="1587916991969465369" name="conceptId" index="1pbfSe" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -57,7 +59,6 @@
     <property role="TrG5h" value="Brick" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
-    <property role="1pbfSe" value="995030957" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1TvVxssVWG6" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -69,13 +70,11 @@
   </node>
   <node concept="1TIwiD" id="1TvVxssVWVj">
     <property role="TrG5h" value="ActuatorDigital" />
-    <property role="1pbfSe" value="995081450" />
     <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
   </node>
   <node concept="1TIwiD" id="1TvVxssVWVs">
     <property role="TrG5h" value="App" />
     <property role="19KtqR" value="true" />
-    <property role="1pbfSe" value="995081459" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1TvVxssXY33" role="1TKVEi">
       <property role="20lmBu" value="reference" />
@@ -95,6 +94,12 @@
       <property role="20lbJX" value="1..n" />
       <ref role="20lvS9" node="1TvVxssXXQr" resolve="State" />
     </node>
+    <node concept="1TJgyj" id="4tHb5jGOtzU" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="macros" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4tHb5jGN8yv" resolve="Macro" />
+    </node>
     <node concept="PrWs8" id="1TvVxssXY1S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -104,12 +109,10 @@
   </node>
   <node concept="1TIwiD" id="1TvVxssWUaP">
     <property role="TrG5h" value="SensorDigital" />
-    <property role="1pbfSe" value="995332300" />
     <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
   </node>
   <node concept="1TIwiD" id="1TvVxssXXQr">
     <property role="TrG5h" value="State" />
-    <property role="1pbfSe" value="995609522" />
     <node concept="1TJgyj" id="1TvVxssXYsQ" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="actions" />
@@ -120,7 +123,13 @@
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="transition" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4bWIWG$7H1O" resolve="Transition" />
+      <ref role="20lvS9" node="Dge16cQ4Ej" resolve="Transition" />
+    </node>
+    <node concept="1TJgyj" id="4tHb5jGNfJC" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="macros" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="4tHb5jGP_Le" resolve="MacroUtilisation" />
     </node>
     <node concept="PrWs8" id="1TvVxssXXR0" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -143,7 +152,6 @@
   <node concept="1TIwiD" id="1TvVxssXXSL">
     <property role="TrG5h" value="Action" />
     <property role="R5$K7" value="true" />
-    <property role="1pbfSe" value="995609672" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="AxPO7" id="3r4skCjRNXn">
@@ -162,51 +170,14 @@
   </node>
   <node concept="1TIwiD" id="7iss6BV1NKb">
     <property role="TrG5h" value="SensorAnalog" />
-    <property role="1pbfSe" value="1872997492" />
     <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
   </node>
   <node concept="1TIwiD" id="7iss6BV1T4H">
     <property role="TrG5h" value="ActuatorAnalog" />
-    <property role="1pbfSe" value="1873019286" />
     <ref role="1TJDcQ" node="1TvVxssVKAm" resolve="Brick" />
-  </node>
-  <node concept="1TIwiD" id="7iss6BV2wQU">
-    <property role="TrG5h" value="TransitionAnalog" />
-    <property role="1pbfSe" value="1873182243" />
-    <node concept="1TJgyi" id="7iss6BV2wQV" role="1TKVEl">
-      <property role="TrG5h" value="value" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-    <node concept="1TJgyj" id="7iss6BV2x0f" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="sensor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="7iss6BV1NKb" resolve="SensorAnalog" />
-    </node>
-    <node concept="PrWs8" id="4bWIWG$7H2H" role="PzmwI">
-      <ref role="PrY4T" node="4bWIWG$7H1O" resolve="Transition" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="7iss6BV2x0h">
-    <property role="TrG5h" value="TransitionDigital" />
-    <property role="1pbfSe" value="1873182842" />
-    <node concept="1TJgyj" id="7iss6BV2x0i" role="1TKVEi">
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="sensor" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="1TvVxssWUaP" resolve="SensorDigital" />
-    </node>
-    <node concept="1TJgyi" id="7iss6BV2x10" role="1TKVEl">
-      <property role="TrG5h" value="status" />
-      <ref role="AX2Wp" node="1TvVxssXXRg" resolve="STATUS" />
-    </node>
-    <node concept="PrWs8" id="4bWIWG$7H2K" role="PzmwI">
-      <ref role="PrY4T" node="4bWIWG$7H1O" resolve="Transition" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7iss6BV2x0U">
     <property role="TrG5h" value="ActionDigital" />
-    <property role="1pbfSe" value="1873182883" />
     <ref role="1TJDcQ" node="1TvVxssXXSL" resolve="Action" />
     <node concept="1TJgyi" id="7iss6BV2x0W" role="1TKVEl">
       <property role="TrG5h" value="status" />
@@ -221,7 +192,6 @@
   </node>
   <node concept="1TIwiD" id="7iss6BV2x0V">
     <property role="TrG5h" value="ActionAnalog" />
-    <property role="1pbfSe" value="1873182884" />
     <ref role="1TJDcQ" node="1TvVxssXXSL" resolve="Action" />
     <node concept="1TJgyi" id="7iss6BV2x12" role="1TKVEl">
       <property role="TrG5h" value="value" />
@@ -234,14 +204,88 @@
       <ref role="20lvS9" node="7iss6BV1T4H" resolve="ActuatorAnalog" />
     </node>
   </node>
-  <node concept="PlHQZ" id="4bWIWG$7H1O">
+  <node concept="Az7Fb" id="4k5Z9RR96u1">
+    <property role="TrG5h" value="_Operator" />
+    <property role="FLfZY" value="[&lt;=&gt;]" />
+  </node>
+  <node concept="1TIwiD" id="Dge16cPKzE">
+    <property role="TrG5h" value="ConditionDigital" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7iss6BV2x0i" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sensor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="1TvVxssWUaP" resolve="SensorDigital" />
+    </node>
+    <node concept="1TJgyi" id="7iss6BV2x10" role="1TKVEl">
+      <property role="TrG5h" value="status" />
+      <ref role="AX2Wp" node="1TvVxssXXRg" resolve="STATUS" />
+    </node>
+    <node concept="PrWs8" id="Dge16cQ4xX" role="PzmwI">
+      <ref role="PrY4T" node="Dge16cPPUj" resolve="Condition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="Dge16cPPUi">
+    <property role="TrG5h" value="ConditionAnalog" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7iss6BV2x0f" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sensor" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="7iss6BV1NKb" resolve="SensorAnalog" />
+    </node>
+    <node concept="1TJgyi" id="7iss6BV2wQV" role="1TKVEl">
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4k5Z9RR96u2" role="1TKVEl">
+      <property role="TrG5h" value="operator" />
+      <ref role="AX2Wp" node="4k5Z9RR96u1" resolve="_Operator" />
+    </node>
+    <node concept="PrWs8" id="Dge16cQ4xV" role="PzmwI">
+      <ref role="PrY4T" node="Dge16cPPUj" resolve="Condition" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="Dge16cPPUj">
+    <property role="TrG5h" value="Condition" />
+  </node>
+  <node concept="1TIwiD" id="Dge16cQ4Ej">
     <property role="TrG5h" value="Transition" />
-    <property role="1pbfSe" value="1729858623" />
-    <node concept="1TJgyj" id="4bWIWG$7H2F" role="1TKVEi">
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="Dge16cQ4Ft" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="conditions" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="Dge16cPPUj" resolve="Condition" />
+    </node>
+    <node concept="1TJgyj" id="Dge16cQ4Fw" role="1TKVEi">
       <property role="20lmBu" value="reference" />
       <property role="20kJfa" value="target" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="1TvVxssXXQr" resolve="State" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4tHb5jGN8yv">
+    <property role="TrG5h" value="Macro" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4tHb5jGN8yV" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="4tHb5jGN8yX" role="1TKVEi">
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sAction" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="7iss6BV2x0U" resolve="ActionDigital" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4tHb5jGP_Le">
+    <property role="TrG5h" value="MacroUtilisation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4tHb5jGPNDj" role="1TKVEi">
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="macro" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4tHb5jGN8yv" resolve="Macro" />
     </node>
   </node>
 </model>
